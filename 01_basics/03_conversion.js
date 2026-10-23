@@ -28,3 +28,33 @@ let stringAmount = String(amount)
 
 let fee = 123.54
 // console.log(typeof fee)
+
+// Operations
+
+// console.log(2 + 2)
+// console.log(2 - 2)
+// console.log(2 * 2)
+// console.log(2 / 2)
+// console.log(2 ** 2)
+// console.log(2 % 2)
+
+let str1 = "Hello"
+let str2 = " World"
+
+let str3 = str1 + str2
+
+// console.log(str3)
+
+// console.log("1" + 3)
+// console.log("1" + 3 + 3)
+// console.log(1 + 3 + "3")
+
+// console.log((3 + 4) * (6 / 3))
+
+// Always use parenthesis to fade confusion from expressions
+
+// console.log(true)
+
+let gameCounter = 100
+gameCounter++
+console.log(gameCounter)
