@@ -52,13 +52,12 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-greet(name)
-myFunction()
+// greet(name)
+// myFunction()
 
-console.log(typeof greet)
+// console.log(typeof greet)
 
 /*
-
 Return type of variables in JavaScript
 
 1) Primitive Datatypes
@@ -75,3 +74,38 @@ Return type of variables in JavaScript
        Function  =>  function
        Object  =>  object
 */
+
+
+// =======================================================================================
+
+//Memory: Stack (Primitive) and heap (Non-Primitive)
+
+let githubName = "Avik3434"
+let userName = githubName
+
+userName = "AvikMukherjee"
+
+// console.table([githubName, userName])
+
+// console.log(githubName)
+// console.log(userName)
+
+let employee1 = {
+    email: "employee1@gmail.com",
+    name: "Employee1",
+    id: 1,
+    upi: "employee1@ybl"
+}
+
+let employee2 = {
+    email: "employee2@gmail.com",
+    name: "Employee2",
+    id: 2,
+    upi: "employee2@ybl"
+}
+
+let currentEmplyee = employee1
+currentEmplyee.email = "john@gmail.com"
+
+console.log(employee1.email)
+console.log(currentEmplyee.email)
