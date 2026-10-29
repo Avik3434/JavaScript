@@ -65,11 +65,36 @@ const users = [
     }
 ]
 
-console.log(users[0]["email"]);
+// console.log(users[0]["email"]);
 
 // returns list of items
-console.log(Object.keys(TinderUser))
-console.log(Object.values(TinderUser))
-console.log(Object.entries(TinderUser))
+// console.log(Object.keys(TinderUser))
+// console.log(Object.values(TinderUser))
+// console.log(Object.entries(TinderUser))
 
-console.log(TinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(TinderUser.hasOwnProperty('isLoggedIn'));
+
+// De-structuring of object
+
+let course = {
+    courseName: "JavaScript",
+    price: "999",
+    courseInstructor: "Chai Aur Code"
+}
+
+let {courseInstructor: teacher} = course
+
+console.log(teacher);
+
+// {
+//     "name":  "Avik",
+//     "coursename": "JavaScript",
+//     "price": "Free"
+// }
+
+[
+    {},
+    {},
+    [],
+    {}
+]
