@@ -1,5 +1,7 @@
 // if
 
+// <, >, <=, >=, ==, !=, ===, !==, !
+
 const isUserLoggedIN = true
 
 if (isUserLoggedIN) {
