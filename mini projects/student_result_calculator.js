@@ -80,3 +80,37 @@ function calculateGrade(percentage) {
   }
   return grade
 }
+
+const student = {
+  studentName: "Avik Mukherjee",
+  age: 19,
+  rollNo: 23,
+  marks: {
+    english: {
+      theory: 79,
+      viva: 9
+    },
+    math: {
+      theory: 57,
+      viva: 9
+    },
+    history: {
+      theory: 89,
+      viva: 9
+    },
+    geography: {
+      theory: 86,
+      viva: 9
+    },
+    science: {
+      theory: 62,
+      viva: 10
+    }
+  },
+  statistics: {
+    fullMarks: {
+      theory: 90,
+      viva: 10
+    }
+}
+}
