@@ -3,6 +3,7 @@
 # Solution
 
 ### Background color changing page (Project 1)
+[Source files](https://github.com/Avik3434/JavaScript/tree/main/07_projects/1-color-changer)
 
 ```JavaScript
 const buttons = document.querySelectorAll('.button');
