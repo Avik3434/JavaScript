@@ -42,7 +42,7 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 .projects {
@@ -55,7 +55,17 @@ h1 {
   padding: 10px 30px;
   border-radius: 8px;
   color: #212121;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
   border: 2px solid #212121;
   margin-top: 5px;
+  transition: all 0.25s ease;
+}
+
+.project-link:hover {
+  background-color: #b8b7b7;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
