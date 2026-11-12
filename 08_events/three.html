@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | two</title>
+</head>
+<style>
+    #stop {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+}
+
+#stop:hover {
+    background-color: #96382d;
+}
+
+#stop:active {
+    transform: scale(0.95);
+}
+    #start {
+    background-color: #037a01;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start:hover {
+    background-color: #1d4c1b;
+}
+
+#start:active {
+    transform: scale(0.95);
+}
+</style>
+<body>
+    <h1>Events and timeouts in js</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayname = function(str){
+        console.log("My name is Avik")
+        console.log(str)
+    }
+
+    let intervalPrinter;
+    document.querySelector('#stop').addEventListener('click', () =>{
+        console.log("Stopped")
+        clearInterval(intervalPrinter)
+    })
+
+    document.querySelector('#start').addEventListener('click', () => {
+        console.log("Starting...")
+        intervalPrinter = setInterval(sayname, 1000, "hi")
+    })
+
+</script>
+</html>
