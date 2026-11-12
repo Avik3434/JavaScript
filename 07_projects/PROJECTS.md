@@ -131,3 +131,99 @@ form.addEventListener('submit', (e) => {
     
 })
 ```
+
+### Unlimited Background colors
+
+[source files](https://github.com/Avik3434/JavaScript/tree/main/07_projects/5-unlimited-colors)
+
+# Solution
+
+```Javascript
+const startButton = document.querySelector('.start')
+const stopButton = document.querySelector('.stop')
+
+const generateRandomColor = function(){
+    let hex = "0123456789ABCDEF"
+    let color = '#'
+    
+    for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)]
+    }
+    return color
+}
+
+const startChangingColors = function (){
+    document.body.style.backgroundColor = generateRandomColor()
+}
+
+let intervalId;
+startButton.addEventListener('click', () => {
+    console.log('starting')
+    if (!intervalId) {
+        intervalId = setInterval(startChangingColors, 1000)
+    }
+
+})
+
+stopButton.addEventListener('click', () =>{
+    console.log("stopped")
+    clearInterval(intervalId)
+    intervalId = null
+
+})const startButton = document.querySelector('.start')
+const stopButton = document.querySelector('.stop')
+
+const generateRandomColor = function(){
+    let hex = "0123456789ABCDEF"
+    let color = '#'
+    
+    for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)]
+    }
+    return color
+}
+
+const startChangingColors = function (){
+    document.body.style.backgroundColor = generateRandomColor()
+}
+
+let intervalId;
+startButton.addEventListener('click', () => {
+    console.log('starting')
+    if (!intervalId) {
+        intervalId = setInterval(startChangingColors, 1000)
+    }
+
+})
+
+stopButton.addEventListener('click', () =>{
+    console.log("stopped")
+    clearInterval(intervalId)
+    intervalId = null
+})
+```
+
+### Keyboard checker
+
+# Solution
+```Javascript
+const insert = document.getElementById('insert')
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+    <div class="color">
+      <table>
+  <tr>
+    <th>key</th>
+    <th>keycode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " " ? "Space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+    </div>
+  `
+})
+```
