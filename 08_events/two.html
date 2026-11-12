@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | two</title>
+</head>
+<style>
+    #stop {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#stop:hover {
+    background-color: #c0392b;
+}
+
+#stop:active {
+    transform: scale(0.95);
+}
+</style>
+<body>
+    <h1>Events and timeouts in js</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    
+    const changeTitle = function (){
+        console.log("Changing text in 3 second")
+        document.querySelector('h1').innerText = "Changed text of html page title"
+    }
+
+    const changeMe = setTimeout(changeTitle, 3000)
+
+    const stopBtn = document.querySelector('#stop').addEventListener('click', () => {
+        console.log("stopped")
+        clearTimeout(changeMe)
+    })
+
+</script>
+</html>
