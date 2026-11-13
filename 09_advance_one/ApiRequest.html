@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRequest</title>
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #181818;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.url {
+    width: 300px;
+    padding: 12px 15px;
+    background-color: #292929;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.url:focus {
+    border-color: #4caf50;
+}
+
+.submit {
+    padding: 11px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit:hover {
+    background-color: #3d9140;
+    transform: translateY(-2px);
+}
+
+.bio-card {
+    width: 300px;
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #252525;
+    border: 1px solid #383838;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bio-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4caf50;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 20px rgba(66, 171, 28, 0.523);
+}
+
+.bio-card p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.bio-card .id-value,
+.bio-card .followers {
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 18px;
+}
+.bio-card .name-value {
+    color: #63e716;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+</style>
+<body>
+    <p>Enter your url</p>
+    <input type="url" class="url" >
+    <button class="submit">Get Data</button>
+
+    <div class="bio-card">
+        
+    </div>
+
+</body>
+    <script src="ApiRequest.js"></script>
+</html>
